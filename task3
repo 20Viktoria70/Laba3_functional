@@ -1,1 +1,10 @@
+def main():
+    print("Введіть елементи кортежу через пробіл:")
+    nums = tuple(map(int, input().split()))
 
+    item = int(input("Введіть елемент для додавання: "))
+
+    result = append_tuple(nums, item)
+    print("Новий кортеж:", result)
+
+main()
