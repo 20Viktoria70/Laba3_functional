@@ -1,3 +1,6 @@
+#
+#
+#
 main :: IO ()
 main = do
     putStrLn "Введіть ім'я:"
