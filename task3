@@ -1,3 +1,6 @@
+#
+#
+#
 def main():
     print("Введіть елементи кортежу через пробіл:")
     nums = tuple(map(int, input().split()))
