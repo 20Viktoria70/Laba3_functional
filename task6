@@ -1,1 +1,11 @@
+main :: IO ()
+main = do
+    putStrLn "Введіть список чисел через пробіл:"
+    input <- getLine
+    let nums = map read (words input) :: [Int]
 
+    putStrLn "Введіть індекс для видалення:"
+    idx <- readLn
+
+    let result = removeAt idx nums
+    putStrLn ("Новий список: " ++ show result)
