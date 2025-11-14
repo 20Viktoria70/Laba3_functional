@@ -1,6 +1,9 @@
-#
-#
-#
+# Створення оновленої копії запису (Haskell)
+# Створіть тип Person, що містить ім’я та вік. Реалізуйте функцію incrementAge, яка повертає новий екземпляр з віком, 
+# збільшеним на 1. Початковий запис не змінюється.
+# data Person = Person { name :: String, age :: Int } deriving Show 
+# incrementAge :: Person -> Person
+
 main :: IO ()
 main = do
     putStrLn "Введіть ім'я:"
