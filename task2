@@ -1,1 +1,18 @@
+def main():
+    print("Введіть пари ключ:значення через пробіл (a:1 b:2):")
+    raw = input().split()
+    d = {}
 
+    for pair in raw:
+        k, v = pair.split(":")
+        d[k] = int(v)
+
+    key = input("Введіть ключ для оновлення: ")
+    value = int(input("Нове значення: "))
+
+    new_d = update_dict(d, key, value)
+
+    print("Оновлений словник:", new_d)
+    print("Початковий словник:", d)
+
+main()
