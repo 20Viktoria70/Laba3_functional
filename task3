@@ -1,6 +1,7 @@
-#
-#
-#
+# Незмінне додавання до кортежу (Python)
+# Напишіть функцію append_tuple(tpl, item), яка повертає новий кортеж з доданим елементом в кінець. Вхідний кортеж не змінюється.
+# def append_tuple(tpl: tuple, item) -> tuple:
+
 def main():
     print("Введіть елементи кортежу через пробіл:")
     nums = tuple(map(int, input().split()))
