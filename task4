@@ -1,1 +1,13 @@
+main :: IO ()
+main = do
+    putStrLn "Введіть ім'я:"
+    n <- getLine
 
+    putStrLn "Введіть вік:"
+    a <- readLn
+
+    let p  = Person n a
+    let p2 = incrementAge p
+
+    putStrLn ("Нова людина: " ++ show p2)
+    putStrLn ("Стара людина: " ++ show p)
