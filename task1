@@ -1,1 +1,14 @@
+main :: IO ()
+main = do
+    putStrLn "Введіть список чисел через пробіл:"
+    input <- getLine
+    let nums = map read (words input) :: [Int]
 
+    putStrLn "Введіть індекс для оновлення:"
+    idx <- readLn
+
+    putStrLn "Введіть нове значення:"
+    val <- readLn
+
+    let result = updateAt idx val nums
+    putStrLn ("Оновлений список: " ++ show result)
